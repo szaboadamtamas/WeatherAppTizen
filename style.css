@@ -1,0 +1,154 @@
+body {
+  font-size: 40px;
+  padding: 6em 4.5em 3.5em 4.5em;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.list-group {
+  font-size: 36px;
+}
+
+.list-group .focused {
+  border-color: #A1DDEF;
+}
+
+.list-group .focused:first-child {
+}
+
+.list-group .focused:not(:first-child) {
+  margin-top: -6px;
+  border-top: solid 6px #A1DDEF;
+}
+
+.list-group .list-group-item.focused {
+  box-shadow: 0px 0px 10px 3px rgba(161, 221, 239, 1);
+}
+
+.list-group .list-group-item.selected {
+  background: #337ab7;
+  color: #fff;
+}
+
+.list-group-item {
+  border-width: 6px;
+  margin-bottom: 0;
+}
+
+.list-group-item:not(:first-child) {
+  border-top: none;
+}
+
+.list-group-item em {
+  float: right;
+  font-size: 80px;
+  display: inline-block;
+  font-style: normal;
+  position: relative;
+  top: -6px;
+  right: 5px;
+}
+
+.list-group li {
+  list-style: none;
+}
+
+.list-group .btn {
+  margin-top: 1em;
+  padding: 1em 2em;
+  font-size: 50px;
+  border: 6px solid #ddd;
+}
+
+.list-group .focused .btn {
+  background-color: #A1DDEF;
+  color: #fff;
+  border-color: #A1DDEF !important;
+  box-shadow: 0px 0px 10px 3px rgba(161, 221, 239, 1);
+}
+
+.list-group .selected .btn {
+  background-color: #337ab7;
+  color: #fff;
+  border-color: #337ab7;
+}
+
+.badge {
+
+}
+
+.app-main .app-main-location {
+  margin-top: 0;
+}
+
+h1.app-main-degree {
+  font-size: 150px;
+  text-align: center;
+  line-height: 250px;
+  margin: 0;
+}
+
+.jumbotron {
+  padding: 30px;
+  margin-bottom: 60px;
+  background-color: #f0f0f0;
+}
+
+.jumbotron:last-child {
+  margin-bottom: 0;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+}
+
+table th {
+  text-align: center;
+}
+
+table tr.primary td {
+  font-size: 1.5em;
+}
+
+.navbar-brand {
+  font-size: 36px;
+  line-height: 70px;
+  height: auto;
+  padding: 15px 30px;
+}
+
+.modal {
+  font-size: 1.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal input {
+  font-size: 1em;
+  height: auto;
+  border-width: 4px;
+}
+
+.modal input.focused {
+  box-shadow: 0px 0px 10px 3px rgba(161, 221, 239, 1);
+  border: solid 4px #A1DDEF;
+  background-color: #84B4DB;
+}
+.modal input.focused::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.modal .btn {
+  font-size: 1em;
+}
+
+.modal .btn.focused {
+  background-color: #A1DDEF;
+  color: #fff;
+  border-color: #A1DDEF !important;
+  box-shadow: 0px 0px 10px 3px rgba(161, 221, 239, 1);
+}
