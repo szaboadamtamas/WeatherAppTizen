@@ -64,7 +64,7 @@ function AddCityScreen(app, $) {
     down: down,
     left: left,
     right: right,
-    return: returnAction,
+    returnAction: returnAction,
     enter: enter,
     addCity: addCity,
     initialize: function() {

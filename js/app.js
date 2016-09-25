@@ -29,7 +29,7 @@ function App(window, $, Handlebars) {
         vm.screens.active.enter();
         break;
       case 10009: //RETURN button
-        vm.screens.active.return();
+        vm.screens.active.returnAction();
         break;
       default:
         console.log("Key code : " + e.keyCode);
@@ -44,7 +44,7 @@ function App(window, $, Handlebars) {
 
   return {
     initialize: function () {
-      $(window).on('load', onDeviceReady);
+      window.onload = onDeviceReady;
       vm.screens.active = vm.screens.main;
     },
     screens: vm.screens

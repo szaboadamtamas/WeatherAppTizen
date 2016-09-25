@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/WeatherAppTizen" version="0.2.1" viewmodes="maximized">
-    <tizen:application id="H7ZbWBd9Qr.WeatherAppTizen" package="H7ZbWBd9Qr" required_version="2.3"/>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://aut.bme.hu/amorg/WeatherAppTizen" version="1.0.0" height="1080" width="1920" viewmodes="fullscreen">
+    <access origin="*" subdomains="true"/>
+    <tizen:application id="H7ZbWBd9Qr.WeatherAppTizen" package="H7ZbWBd9Qr" required_version="2.4"/>
+    <author href="http://aut.bme.hu" email="amorg@aut.bme.hu">Amorg</author>
     <content src="index.html"/>
     <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
+    <feature name="http://tizen.org/feature/tv.inputdevice"/>
+    <feature name="http://www.samsungdforum.com/feature/Keyboard"/>
+    <feature name="http://www.samsungdforum.com/feature/Mouse"/>
     <icon src="icon.png"/>
     <tizen:metadata key="http://samsung.com/tv/metadata/prelaunch.support" value="true"/>
     <name>WeatherAppTizen</name>
     <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/network.public"/>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
     <tizen:profile name="tv-samsung-public"/>
     <tizen:setting screen-orientation="landscape" context-menu="enable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
 </widget>

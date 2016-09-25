@@ -1,1 +1,4 @@
 .settings/
+.sign/
+.sdk_delta.info
+WeatherAppTizen.wgt

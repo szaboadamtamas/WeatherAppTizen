@@ -20,5 +20,6 @@
 		<nature>json.validation.nature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 		<nature>org.tizen.web.project.builder.WebNature</nature>
+		<nature>org.tizen.web.tv.nature</nature>
 	</natures>
 </projectDescription>
