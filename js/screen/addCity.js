@@ -43,7 +43,6 @@ function AddCityScreen(app, $) {
     $('[data-focus-group] [data-focusable].focused').focus().click();
   }
 
-
   function returnAction() {
     vm.elements.modal.hide('fast');
     vm.elements.cityNameInput.val('');

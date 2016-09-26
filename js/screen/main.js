@@ -88,7 +88,7 @@ function MainScreen(app, $, Handlebars) {
     left: function () {},
     right: function () {},
     returnAction: function () {
-    	tizen.application.getCurrentApplication().exit();
+      window.tizen.application.getCurrentApplication().exit();
     },
     enter: enter,
     selectCity: selectCity,

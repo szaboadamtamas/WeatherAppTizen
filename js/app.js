@@ -31,6 +31,9 @@ function App(window, $, Handlebars) {
       case 10009: //RETURN button
         vm.screens.active.returnAction();
         break;
+      case 10182:
+        window.tizen.application.getCurrentApplication().exit();
+        break;
       default:
         console.log("Key code : " + e.keyCode);
         break;
@@ -40,6 +43,10 @@ function App(window, $, Handlebars) {
   function onDeviceReady() {
     $(window.document).keydown(onKeyDown);
     vm.screens.main.initialize();
+
+    //Register tvKeys
+    window.tizen.tvinputdevice.registerKey("Return");
+    window.tizen.tvinputdevice.registerKey("Exit");
   }
 
   return {
