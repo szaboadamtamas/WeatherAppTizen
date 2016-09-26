@@ -33,6 +33,7 @@ body {
 .list-group-item {
   border-width: 6px;
   margin-bottom: 0;
+  cursor: pointer;
 }
 
 .list-group-item:not(:first-child) {
@@ -88,6 +89,19 @@ h1.app-main-degree {
   margin: 0;
 }
 
+.app-sun .app-sun-icon {
+  font-size: 2em;
+  text-align: center;
+  position: relative;
+  top: 0.04em;
+}
+
+.app-sun .app-sun-text {
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 0.275em;
+}
+
 .jumbotron {
   padding: 30px;
   margin-bottom: 60px;
@@ -138,6 +152,7 @@ table tr.primary td {
   border: solid 4px #A1DDEF;
   background-color: #84B4DB;
 }
+
 .modal input.focused::-webkit-input-placeholder {
   color: #fff;
 }

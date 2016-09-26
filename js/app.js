@@ -53,8 +53,3 @@ function App(window, $, Handlebars) {
 
 var app = new App(window, jQuery, Handlebars);
 app.initialize();
-
-/// HandleBar helpers ...
-Handlebars.registerHelper('celsius', function (kelvin) {
-  return (parseFloat(kelvin) - 273.15).toFixed(2);
-});

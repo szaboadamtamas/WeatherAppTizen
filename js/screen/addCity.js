@@ -22,10 +22,6 @@ function AddCityScreen(app, $) {
       switchFocus(vm.elements.closeButton, vm.elements.addButton);
   }
 
-  function right() {
-    left();
-  }
-
   function up() {
     if(vm.elements.cityNameInput.hasClass('focused')) {
       return;
@@ -63,7 +59,7 @@ function AddCityScreen(app, $) {
     up: up,
     down: down,
     left: left,
-    right: right,
+    right: left, //Left is now same as Right
     returnAction: returnAction,
     enter: enter,
     addCity: addCity,

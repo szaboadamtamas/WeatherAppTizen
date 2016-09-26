@@ -55,7 +55,10 @@
 <script id="selected-city-template" type="text/x-handlebars-template">
   <div class="jumbotron app-main">
     <h2 class="app-main-location">{{name}}
-      <small>{{data.country}}</small>
+      <small>{{data.sys.country}}</small>
+      {{#if data.weather}}
+      <small class="pull-right"><i>{{data.weather.0.main}}</i></small>
+      {{/if}}
     </h2>
     <h1 class="app-main-degree">{{celsius data.main.temp}}&deg;C</h1>
     <table class="app-main-table">
@@ -74,6 +77,21 @@
         <td>Min.</td>
       </tr>
     </table>
+  </div>
+  <div class="jumbotron app-sun">
+    <div class="row">
+      <div class="app-sun-icon col-md-2">
+        <i class="fa fa-sun-o"></i>
+      </div>
+      <div class="app-sun-text col-md-5">
+        <i class="fa fa-arrow-up"></i>
+        <span>{{time data.sys.sunrise}}</span>
+      </div>
+      <div class="app-sun-text col-md-5">
+        <i class="fa fa-arrow-down"></i>
+        <span>{{time data.sys.sunset}}</span>
+      </div>
+    </div>
   </div>
 </script>
 <!-- Main Screen End -->
@@ -118,6 +136,7 @@
 
 <script src="lib/handlebars-v4.0.5.js"></script>
 <script src="lib/jquery-3.1.1.min.js"></script>
+<script src="js/helpers.js"></script>
 <script src="js/model/city.js"></script>
 <script src="js/screen/main.js"></script>
 <script src="js/screen/addCity.js"></script>
